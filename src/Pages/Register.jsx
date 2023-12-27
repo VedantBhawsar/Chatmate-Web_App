@@ -81,7 +81,7 @@ const Register = () => {
           height: "100vh",
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "secondary.main",
+          backgroundColor: "#4527a0",
         }}
       >
         <Box

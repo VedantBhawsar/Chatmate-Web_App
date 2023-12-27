@@ -7,7 +7,8 @@ import { Box, IconButton, Typography } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const Chat = () => {
-  const { data } = useContext(ChatContext);
+  const { data, dispatch } = useContext(ChatContext);
+  console.log(data);
   return (
     <>
       {data.chatId === "null" ? (
@@ -44,6 +45,7 @@ const Chat = () => {
                 padding: 1,
                 "&:hover": {},
               }}
+              onClick={() => dispatch({ type: "CHANGE_USER", payload: "null" })}
             >
               <ArrowBackIcon />
             </IconButton>
