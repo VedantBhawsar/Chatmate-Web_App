@@ -1,0 +1,545 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;400;500;600&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+ }
+ :root{
+-ms-overflow-style: none;
+scrollbar-width: none;
+
+ }
+
+
+
+html{
+    font-family: 'Josefin Sans', 'sans-serif';
+}
+
+
+// @mixin mobile{
+//     @media screen and (max-width: 550px) {
+//         @content;
+//     }
+// }
+
+// @mixin table{
+//     @media screen and (max-width: 800px) {
+//         @content;
+//     }
+// }
+
+// // .formContainer {
+// //     display: flex;
+// //     font-family: 'Poppins', sans-serif;
+// //     background-color: #9d4edd;
+// //     align-items: center;
+// //     justify-content: center;
+// //     height: 100vh;
+
+
+// //     .formWrapper {
+// //         display: flex;
+// //         color: black;
+// //         width: 23vw;
+// //         flex-direction: column;
+// //         background-color: white;
+// //         padding: 5vh;
+// //         text-align: center;
+// //         border-radius: 8px;
+// //         @include mobile{
+// //             width: 65vw;
+// //         }
+
+// //         .logo {
+// //             font-size: x-large;
+// //             font-weight: 600;
+// //         }
+
+// //         .title {
+// //             font-size: small;
+// //         }
+
+// //         form {
+// //             display: flex;
+// //             gap: 2.5vh;
+// //             flex-direction: column;
+
+// //             .input {
+// //                 border: none;
+// //                 border-bottom: 1.2px solid lightgray;
+// //                 padding: 1.5vh;
+// //                 outline: none;
+// //                 transition: 0.3s;
+// //             }
+
+// //             .input:focus {
+// //                 border-radius: 2px;
+// //                 border-bottom: 2.5px solid #9d4edd;
+// //             }
+
+// //             button {
+// //                 padding: 2vh;
+// //                 color: white;
+// //                 background-color: #9d4edd;
+// //                 border: none;
+// //                 font-weight: 600;
+// //                 cursor: pointer;
+// //                 color: white;
+// //                 border-radius: 1vh;
+// //                 transition: 0.7s ease-in-out;
+// //             }
+
+// //             button:hover {
+// //                 box-shadow: 3px 3px 10px #9d4edd;
+// //                 color: #9d4edd;
+// //                 background-color: white;
+// //                 border: 2px solid #9d4edd;
+// //             }
+
+
+// //             label {
+// //                 display: inline-block;
+// //                 padding: 6px 12px;
+// //                 cursor: pointer;
+// //                 border: 1px solid #ccc;
+// //                 border-radius: 4px;
+// //                 background-color: #f2f2f2;
+// //                 @include mobile{
+// //                     font-size: 15px;
+// //                 }
+
+// //                 input[type="file"]{
+// //                     display: none;
+// //                 }
+
+// //                 .GrFormUpload {
+// //                     width: 3vh;
+// //                     height: 3vh;
+// //                     margin-right: 2px;
+// //                 }
+// //             }
+// //         }
+
+// //         p {
+// //             font-size: 2vh;
+// //             margin-top: 1.5vh;
+// //             @include mobile{
+// //                 font-size: 1.5vh;
+// //             }
+
+// //             .Link {
+// //                 text-decoration: none;
+// //                 color: #9d4edd;
+// //                 margin-left: 1vh;
+// //                 transition: 0.3s;
+// //             }
+
+// //             .Link:hover {
+// //                 text-decoration: underline;
+// //                 font-size: medium;
+// //             }
+// //         }
+
+// //     }
+
+
+// // }
+
+// .home {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     background-color: #9d4edd;
+
+//     .container {
+//         background-color: white;
+//         height: 80vh;
+//         width: 70%;
+//         border-radius: 1vh;
+//         display: flex;
+//         // overflow: hidden;
+//         box-shadow: 3px 3px 10px #5a189a;
+//         @include mobile{
+//             width: 100vw;
+//             height: 100vh;
+//         }
+        
+//         .sidebar {
+//             background-color: #7b2cbf;
+//             flex: 1;
+//             @include mobile{
+//                 // display: none;
+//             }
+
+//             .allchats {
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 margin: auto;
+//                 margin-top: 1em;
+
+//                 .chats {
+//                     display: flex;
+//                     color: white;
+//                     padding: 2vh;
+//                     padding-top: 1vh;
+//                     padding-bottom: 1vh;
+//                     gap: 2vh;
+//                     transition: 0.7s;
+//                     font-family: 'poppins';
+//                     cursor: pointer;
+
+//                     img {
+//                         height: 3.5em;
+//                         width: 3.5em;
+//                         border-radius: 50%;
+//                     }
+
+//                     .info {
+//                         display: flex;
+//                         flex-direction: column;
+//                         letter-spacing: 0px;
+//                         .title {
+//                             font-size: 2.5vh;
+//                             font-weight: 500;
+//                         }
+
+//                         .desc {
+//                             font-size: 1.6vh;
+//                             color:  #cbcbcb;
+//                             // color: white;
+//                             margin: 0;
+//                             font-weight: 400;
+//                         }
+//                     }
+//                 }
+
+//                 .chats:hover {
+//                     background-color: #5a189a;
+//                 }
+//             }
+
+//             .navbar {
+//                 background-color: #5a189a;
+//                 display: flex;
+//                 color: white;
+//                 justify-content: space-between;
+//                 align-items: center;
+//                 font-family: "poppins";
+//                 padding: 3vh;
+//                 height: 3vh;
+
+//                 .title {
+//                     font-size: larger;
+//                     font-weight: 600;
+//                     color: #c77dff;
+//                 }
+
+//                 div {
+//                     align-items: center;
+//                     gap: 0.8vh;
+//                     display: flex;
+
+//                     img{
+//                         height: 3em;
+//                         width: 3em;
+//                         border-radius: 100%;
+//                     }
+
+//                     button {
+//                         border: none;
+//                         font-family: 'poppins';
+//                         padding: 6px;
+//                         color: whitesmoke;
+//                         font-weight: 550;
+//                         border-radius: 1vh;
+//                         cursor: pointer;
+//                         transition: 0.8s;
+//                         background-color: #9d4edd;
+//                     }
+
+//                     button:hover {
+//                         box-shadow: 1px 1px 10px #3c096c;
+//                         background-color: white;
+//                         color: #9d4edd;
+//                         border: 2px solid #9d4edd;
+//                     }
+//                 }
+
+//             }
+
+//             .search {
+
+//                 .searchform {
+//                     border-bottom: #240046;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     border-bottom: 2px solid white;
+//                     margin-left: .5vw;
+//                     margin-right: .5vw;
+//                     @include mobile{
+//                     margin-right: 3.5vw;
+//                     margin-left: 3.5vw;
+//                     }
+
+//                     input {
+//                         background-color: transparent;
+//                         border: none;
+//                         outline: none;
+//                         padding: 10px;
+//                         width: 40vh;
+//                         margin: auto;
+//                         font-size: 2.2vh;
+//                         color: lightgray;
+//                         @include mobile{
+//                             width: 80vw;
+//                         }
+//                     }
+
+//                     .searchicon{
+//                         color: white;
+//                         font-size: 2em;
+//                         margin-bottom: -10px;
+//                         &:hover{
+//                             cursor: pointer;  
+//                         }
+//                     }
+
+//                     ::placeholder {
+//                         color: lightgray;
+//                     }
+//                 }
+
+//                 .userChat {
+//                     display: flex;
+//                     // flex-direction: column;
+//                     justify-content: start;
+//                     margin: auto;
+//                     margin-top: 1vh;
+//                     align-items: center;
+//                     margin: 20px;
+
+//                     img {
+//                             border-radius: 50%;
+//                             width: 3em;
+//                         }
+
+//                     .userChatInfo {
+//                         display: flex;
+//                         color: white;
+//                         padding: 2vh;
+//                         padding-top: 1vh;
+//                         padding-bottom: 1vh;
+//                         gap: 2vh;
+//                         transition: 0.7s;
+//                         font-family: 'poppins';
+//                         cursor: pointer;
+
+//                         .title {
+//                             font-size: 2.5vh;
+//                         }
+
+//                         .desc {
+//                             font-size: 1.6vh;
+//                             color: white;
+//                             font-weight: 300;
+//                         }
+//                     }
+
+//                     .userChat:hover {
+//                         background-color: #5a189a;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .chat {
+//             flex: 2;
+//             background-color: #3c096c;
+//             @include mobile{
+//                 // display: none;
+//                 height: 100vh;
+//             }
+
+//             .chatInfo {
+//                 background-color: #7b2cbf;
+//                 display: flex;
+//                 color: white;
+//                 justify-content: space-between;
+//                 align-items: center;
+//                 font-family: "poppins";
+//                 padding: 3vh;
+//                 height: 3vh;
+//                 @include mobile{
+//                     padding-left: 2vh;
+//                     justify-content: flex-start;
+//                     gap: 3.5vw;
+//                     height: 2vh;
+//                 }
+
+//                 img{
+//                     border-radius: 100%;
+//                 }
+
+//                 .userinfo {
+//                     display: flex;
+//                     gap: 0.7vw;
+//                     align-items: center;
+//                     @include mobile{
+//                         gap: 3vw;
+//                     }
+
+//                     img {
+//                         border-radius: 50%;
+//                     }
+
+//                     span {
+//                         font-size: 2.2vh;
+//                         font-weight: 500;
+                       
+//                     }
+
+//                     .status {
+//                         font-size: 1.7vh;
+//                         color: white;
+//                         font-weight: 300;
+//                         @include mobile{
+//                             font-size: 1.3em;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .massages {
+//                 background-color: #ddddf7;
+//                 padding: 10px;
+//                 // height: calc(100% - 160px);
+//                 height: calc(60vh + 1.3vh);
+//                 overflow-y: auto;
+//                 @include mobile{
+//                     height: 82vh;
+//                     border-radius: 0;
+//                 }
+
+//                 .message {
+//                     display: flex;
+//                     gap: 20px;
+//                     margin-bottom: 20px;
+
+//                     .messageInfo {
+//                         display: flex;
+//                         flex-direction: column;
+//                         color: gray;
+//                         font-weight: 300;
+
+//                         img {
+//                             width: 40px;
+//                             height: 40px;
+//                             border-radius: 50%;
+//                             object-fit: cover;
+//                         }
+//                     }
+
+//                     .messageContent {
+//                         max-width: 80%;
+//                         display: flex;
+//                         flex-direction: column;
+//                         gap: 10px;
+
+//                         p {
+//                             background-color: white;
+//                             padding: 10px 20px;
+//                             border-radius: 0px 10px 10px 10px;
+//                             max-width: max-content;
+//                             margin: 0;
+//                         }
+
+//                         img {
+//                             width: 50%;
+//                         }
+//                     }
+
+//                     &.owner {
+//                         flex-direction: row-reverse;
+
+//                         .messageContent {
+//                             align-items: flex-end;
+
+//                             p {
+//                                 background-color: #8da4f1;
+//                                 color: white;
+//                                 border-radius: 10px 0px 10px 10px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+
+
+//             .input {
+//                 background-color: white;
+//                 padding: 2vh;
+//                 height: 3vh;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-between;
+            
+//                 input {
+//                     border: none;
+//                     width: 100%;
+//                     outline: none;
+//                     padding: 10px;
+//                     color: #2f2d52;
+//                     font-size: 2vh;
+            
+//                     &::placeholder {
+//                         color: lightgray;
+//                     }
+//                 }
+            
+//                 .send {
+//                     display: flex;
+//                     gap: 10px;
+//                     align-items: center;
+            
+//                     img {
+//                         height: 24px;
+//                         cursor: pointer;
+//                     }
+            
+//                     button {
+//                         border: none;
+//                         padding: 10px 15px;
+//                         color: white;
+//                         font-weight: 500;
+//                         transition: 0.4s;
+//                         background-color: #8da4f1;
+//                         border-radius: 0.8vh;
+            
+//                         &:hover {
+//                             cursor: pointer;
+//                             color: #8da4f1;
+//                             padding: 8px 14px;
+//                             background-color: white;
+//                             border: 2px solid #8da4f1;
+//                             box-shadow: 1px 1px 12px #8da4f1;
+//                         }
+//                     }
+//                   }
+//                  }
+//               }
+//             }
+//         }
+
+
+// ::-webkit-scrollbar {
+//     width: 0.2em;
+//     background-color: white;
+//     }
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: #5a189a;
+// }   
